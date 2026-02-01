@@ -16,7 +16,7 @@ st.caption("Berbasis Aksesibilitas Difabel & Kualitas Informasi")
 # ===============================
 @st.cache_data
 def load_data():
-    return pd.read_csv("dataset\AfterCleaned.csv")
+    return pd.read_csv("dataset/AfterCleaned.csv")
 
 df = load_data()
 
