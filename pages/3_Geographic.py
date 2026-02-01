@@ -11,7 +11,7 @@ st.title("GIS – 5 Tempat Ibadah Prioritas Jawa Barat")
 # ===============================
 # LOAD DATA
 # ===============================
-df = pd.read_csv("dataset\AfterCleaned.csv")
+df = pd.read_csv("dataset/AfterCleaned.csv")
 df.columns = df.columns.str.strip()   # WAJIB
 
 df = calculate_score(df)
@@ -118,7 +118,7 @@ if not top5.empty:
         ).add_to(m)
 
 else:
-    st.warning("⚠️ Tidak ada data sesuai filter yang dipilih.")
+    st.warning("Tidak ada data sesuai filter yang dipilih.")
 
 # ===============================
 # RENDER MAP
